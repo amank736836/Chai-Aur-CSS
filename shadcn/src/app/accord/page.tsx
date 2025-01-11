@@ -5,6 +5,19 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
+import Link from "next/link";
+
 export default function AccordPage() {
   const faq = [
     {
@@ -29,7 +42,7 @@ export default function AccordPage() {
   ];
 
   return (
-    <div className="flex justify-center items-center min-h-screen">
+    <div className="flex justify-center items-center min-h-screen flex-col">
       <main className="w-[500px] p-4 h-full">
         {faq.map(({ question, answer }) => (
           <Accordion type="single" collapsible className="w-full">
@@ -44,6 +57,24 @@ export default function AccordPage() {
           </Accordion>
         ))}
       </main>
+
+      <AlertDialog>
+        <AlertDialogTrigger>Open</AlertDialogTrigger>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+            <AlertDialogDescription>
+              That You want to go back to the home page?
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogCancel>Cancel</AlertDialogCancel>
+            <Link href="/">
+              <AlertDialogAction>Continue</AlertDialogAction>
+            </Link>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
     </div>
   );
 }
