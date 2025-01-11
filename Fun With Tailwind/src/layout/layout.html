@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <link rel="stylesheet" href="../output.css" />
+  </head>
+  <body>
+    <div class="bg-black h-full w-full text-white min-h-[35rem]">
+      <div class="grid gap-2 grid-cols-3 h-full w-full p-2">
+        <div
+          class="rounded-l bg-orange-500 shadow-xl min-h-[100px] flex justify-center items-center"
+        >
+          1
+        </div>
+        <div
+          class="rounded-l bg-teal-500 shadow-xl min-h-[100px] flex justify-center items-center"
+        >
+          2
+        </div>
+        <div
+          class="rounded-l bg-red-500 shadow-xl min-h-[100px] flex justify-center items-center"
+        >
+          3
+        </div>
+      </div>
+    </div>
+    <div class="bg-black h-full w-full text-white min-h-[35rem] sm:grid-cols-3">
+      <div class="grid gap-2 sm:grid-cols-3 h-full w-full p-2">
+        <div
+          class="rounded-l bg-orange-500 shadow-xl min-h-[100px] flex justify-center items-center"
+        >
+          1
+        </div>
+        <div
+          class="rounded-l bg-teal-500 shadow-xl min-h-[100px] flex justify-center items-center"
+        >
+          2
+        </div>
+        <div
+          class="rounded-l bg-red-500 shadow-xl min-h-[100px] flex justify-center items-center"
+        >
+          3
+        </div>
+      </div>
+    </div>
+    <div class="bg-black h-full w-full text-white min-h-[55rem]">
+      <div class="grid gap-2 sm:grid-cols-12 h-full w-full p-2">
+        <div
+          class="rounded-l bg-orange-500 shadow-xl min-h-[100px] sm:col-span-4 hidden sm:flex justify-center items-center"
+        >
+          1
+        </div>
+        <div
+          class="rounded-l bg-teal-500 shadow-xl min-h-[100px] flex justify-center items-center sm:col-span-2"
+        >
+          2
+        </div>
+        <div
+          class="rounded-l bg-red-500 shadow-xl min-h-[100px] flex justify-center items-center sm:col-span-6"
+        >
+          3
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
