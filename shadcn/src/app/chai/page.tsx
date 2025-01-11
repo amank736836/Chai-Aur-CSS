@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 function ChaiPage() {
   return (
     <main className="h-full flex justify-center items-center flex-col">
@@ -6,6 +8,9 @@ function ChaiPage() {
         Test Button
       </button>
 
+      <Button
+      variant="chai"
+      >ShadCN Button</Button>
 
 
     </main>
